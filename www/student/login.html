@@ -2,23 +2,29 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   </head>
   <body>
  
       <div data-role="page" id ="login">
-        <div data-role="header">
-          <h1>Welcome To My Homepage</h1>
+        <div data-role="header" data-position="fixed" data-add-back-btn="true" data-iconpos="notext">
+          <h1>Cousult Hanshin</h1>
         </div>
        
         <div data-role="content" class="ui-content">
-          <p>I Am Now A Mobile Developer!!</p>
+          <center><img src="../assets/img/symbol.png" width="100%"></center>
+          <label for="s_no">학번 입력</label>
+          <input type="id" id="s_no">
+          <button onclick="student_login()">확인</button>
         </div>
-       
-        <div data-role="footer">
-          <h1>Footer Text</h1>
-        </div>
+
+        <script type="text/javascript">
+          function student_login() {
+            
+          }
+        </script>
       </div> 
  
   </body>
