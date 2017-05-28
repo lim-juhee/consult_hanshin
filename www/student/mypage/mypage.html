@@ -9,13 +9,25 @@
   <body>
  
       <div data-role="page" id ="login">
-        <div data-role="header" data-position="fixed">
-          <h1>Cousult Hanshin</h1>
+        <div data-role="header" data-position="fixed" data-add-back-btn="true">
+          <h1>My Page</h1>
         </div>
        
         <div data-role="content" class="ui-content">
-          <!-- ><center><img src="../assets/img/symbol.png" width="100%"></center>-->
-          <a href = "mypage/change.html" class="ui-btn">정보변경</a>
+          <center><img src="../../../assets/img/profile.png" width="40%"></center>
+          <ul>
+            <li>학과  :  </li> </label> <label>컴퓨터공학과</label>
+            <li>학년  :  </li> <label> 4 </label>
+            <li>학번  :  </li> <label > 201358038 </label>
+            <li>이름  :  </li> <label > 정예원 </label>
+          </ul>          
+          <center><a href = "change.html" class="ui-btn">정보변경</a></center>
+
+          <script type="text/javascript">
+          function student_mypage() {
+            location.href ="change.html"
+          }
+        </script>
 
         </div>
       </div> 

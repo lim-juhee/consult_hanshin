@@ -9,25 +9,35 @@
   <body>
  
       <div data-role="page" id ="login">
-        <div data-role="header" data-position="fixed">
+        <div data-role="header" data-position="fixed" data-add-back-btn="true">
           <h1>My Page</h1>
         </div>
        
         <div data-role="content" class="ui-content">
-          <center><img src="../assets/img/profile.png" width="30%"></center>
-          <button onclick="student_login()">사진 변경</button>
-          <label for="s_no">학과 입력</label>
+          <center><img src="../../../assets/img/profile.png" width="40%"></center>
+          <center><button onclick="change_image()">사진 변경</button></center>
+          <label for="s_no">학과 입력 : </label>
           <input type="id" id="s_no">
-          <label for="s_no">학년 입력</label>
+          <label for="s_no">학년 입력 : </label>
           <input type="id" id="s_no">
-          <label for="s_no">학번 입력</label>
+          <label for="s_no">학번 입력 : </label>
           <input type="id" id="s_no">     
-          <label for="s_no">이름 입력</label>
+          <label for="s_no">이름 입력 : </label>
           <input type="id" id="s_no">    
-          <button onclick="student_login()">정보 변경</button>          
+          <center><button onclick="save()">저장 하기</button></center>          
 
 
         </div>
+        <script type="text/javascript">
+          function change_image() {
+          //로컬이미지 불러오기 기능  
+          }
+          function save() {
+            //정보저장
+            location.href ="mypage.html"
+          }
+        </script>
+
       </div> 
  
   </body>
